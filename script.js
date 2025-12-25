@@ -119,6 +119,7 @@ function render() {
     .join("");
 
   // update numbers
+  document.getElementById("yearsExp").textContent = "2+";
   document.getElementById("projectsCount").textContent = `${projects.length}+`;
 }
 
