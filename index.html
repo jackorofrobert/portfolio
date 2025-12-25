@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Bảo Sơn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="">PF<span>.</span></a>
+
+        <nav class="nav" id="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn"
+            id="themeBtn"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            🌙
+          </button>
+          <button
+            class="icon-btn burger"
+            id="burger"
+            aria-label="Open menu"
+            title="Menu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">👋 Hi, I’m</p>
+          <h1>
+            <span class="grad">Bảo Sơn</span><br />
+            Developer / Cyber Security
+          </h1>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="#contact">Contact me</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <div class="meta-number" id="yearsExp">1+</div>
+              <div class="meta-label">Years experience</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-number" id="projectsCount">6+</div>
+              <div class="meta-label">Projects</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-number">100%</div>
+              <div class="meta-label">Learning mindset</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">
+            <img src="Self.JPG" alt="Avatar" />
+          </div>
+
+          <div class="card">
+            <h3>Quick info</h3>
+            <ul class="list">
+              <li>📍 Vietnam</li>
+              <li>💼 Developer / Cyber Security</li>
+              <li>✉️ dinhson2109@gmail.com</li>
+              <li>🔗 github.com/jackorofrobert</li>
+              <li>📱 +84 938 2109 04</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Short-term Goal</h3>
+            <p class="muted">
+              Strengthen my full-stack development skills while building a solid
+              foundation in Cyber Security, focusing on secure application
+              design, vulnerability awareness, and real-world implementation
+              through practical projects.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Long-term Goal</h3>
+            <p class="muted">
+              Become a security-conscious full-stack professional capable of
+              delivering robust, scalable applications while contributing to the
+              organization’s overall security posture and technological growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills">
+          <div class="pill">HTML</div>
+          <div class="pill">CSS</div>
+          <div class="pill">JavaScript</div>
+          <div class="pill">Responsive UI</div>
+          <div class="pill">Git/GitHub</div>
+          <div class="pill">API / Fetch</div>
+          <div class="pill">React</div>
+          <div class="pill">Python</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="toolbar">
+          <div class="tabs" id="tabs">
+            <button class="tab active" data-tag="all">All</button>
+            <button class="tab" data-tag="web">Web</button>
+            <button class="tab" data-tag="landing">Landing Page</button>
+            <button class="tab" data-tag="corporate">Corporate</button>
+          </div>
+
+          <div class="search">
+            <input id="projectSearch" placeholder="Search projects..." />
+            <button class="icon-btn" id="clearSearch" title="Clear">✕</button>
+          </div>
+        </div>
+
+        <div class="projects" id="projectGrid">
+          <!-- cards rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Info</h3>
+            <ul class="list">
+              <li>📧 Email: dinhson2109@gmail.com</li>
+              <li>
+                🐙 GitHub:
+                <a href="https://github.com/jackorofrobert">Bảo Sơn</a>
+              </li>
+              <li>
+                💬 Facebook:
+                <a href="https://www.facebook.com/dhbaoson/">Bảo Sơn</a>
+              </li>
+              <li>
+                💬 LinkedIn:
+                <a href="https://www.linkedin.com/in/son-duong-5ba908210/"
+                  >Bảo Sơn</a
+                >
+              </li>
+              <li>📱 +84 938 2109 04</li>
+            </ul>
+          </div>
+
+          <form class="card" id="contactForm">
+            <h3>Send a message</h3>
+            <label class="field">
+              <span>Name</span>
+              <input required name="name" placeholder="Your name" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input
+                required
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea
+                required
+                name="message"
+                rows="4"
+                placeholder="I’d like to collaborate on..."
+              ></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send</button>
+            <p class="hint" id="formHint"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Bảo Sơn</p>
+      </div>
+    </footer>
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
